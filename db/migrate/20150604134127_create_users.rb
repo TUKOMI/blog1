@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :blog_url
       t.string :github_url
       t.string :edu_info
-      t.tsring :introduction
+      t.string :introduction
       t.string :skills
 
       t.timestamps null: false

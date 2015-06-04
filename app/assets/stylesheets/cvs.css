@@ -1,0 +1,452 @@
+/*******************************************
+*
+*CV root path Style
+*
+ *******************************************/
+
+body {
+	height: 10240px;
+	font-family: "Microsoft YaHei",sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#clip {
+	width: 100%;
+  	height: 100%;
+  	background-color: #47C1F2;
+  	position: fixed;
+  	left: 0;
+  	top: 0;
+}
+.strang {
+	color: #D71922;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+img.bottom{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 600px;
+}
+
+/*@Info Page
+Y roll
+----------------------------------------------------------------------------------------------------------------*/
+#intro-page {
+	background-color: #47C1F2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.logo-cell {
+	position: absolute;
+	top: 0;
+  	left: 0;
+  	width: 100%;
+  	z-index: 1200;
+}
+
+.logo {
+	display: block;
+	width: 247px;
+	height: 86px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -120px;
+	background: url(logo-plane.png) no-repeat -2px -11px;
+}
+
+@-webkit-keyframes vh {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+@-moz-keyframes vh {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+@keyframes vh {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+.logo img {
+	width: 80px;
+	height: 80px;
+	top: -12px;
+	left: 78px;
+	position: absolute;
+	-webkit-animation: vh 0.1s steps(6) infinite;
+	-moz-animation: vh 0.1s steps(6) infinite;
+	animation: vh 0.1s steps(6) infinite;
+}
+
+.tringle-bar {
+	width: 100%;
+	height: 200px;
+	background-color: #fff;
+	position: absolute;
+	top: -190px;
+	z-index: 1100;
+}
+
+.tringle-bar img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 200px;
+	display: block;
+
+}
+
+.tringle-back {
+	width: 100%;
+	height: 60px;
+	background: rgb(215, 215, 215);
+	position: absolute;
+	top: 0;
+	z-index: 900;
+}
+
+.tringle-back img {
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+
+.plane {
+	width: 190px;
+	position: absolute;
+	top: -80px;
+	left: 50%;
+	margin-left: -95px;
+	z-index: 950;
+}
+
+.plane img {
+	display: block;
+	width: 100%;
+	height: auto!important;
+}
+
+@-webkit-keyframes rot {
+	0% {
+		background-position:center 0
+	}
+	100% {
+		background-position:center -600px
+	}
+}
+@-moz-keyframes rot {
+	0% {
+		background-position:center 0
+	}
+	100% {
+		background-position:center -600px
+	}
+}
+@keyframes rot {
+	0% {
+		background-position:center 0
+	}
+	100% {
+		background-position:center -600px
+	}
+}
+
+.airscrew {
+	display: block;
+	width: 230px;
+	height: 30px;
+	position: absolute;
+	left: -21px;
+    top: 125px;
+	background: url(vint-horisontal.png) center top no-repeat;
+	-webkit-animation: rot 0.1s steps(20) infinite;
+	-moz-animation: rot 0.1s steps(20) infinite;
+	animation: rot 0.1s steps(20) infinite;
+}
+
+.self-box {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	background-color: #efefef;
+	z-index: 800;
+}
+
+.self-box .road-box{
+	width: 266px;
+	height: 678px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	z-index: 90;
+	margin-left: -133px;
+}
+
+.self-box .road-line{
+	background: url(road-line.png) left top repeat-y;
+	width: 266px;
+    height: 8000px;
+    overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+.self-cnt {
+	width: 780px;
+	height: 450px;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: -390px;
+	z-index: 100;
+}
+
+.self-box .cnt-bg {
+	width: 600px;
+	height: 600px;
+	background: url(home-blur.png) 0 0 no-repeat;
+	position: absolute;
+	top: -100px;
+	z-index: 80;
+}
+
+img.photo {
+	width: 100%;
+}
+
+div.photo-box{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -60px;
+	z-index: 100;
+}
+
+.who-am-i {
+	width: 200px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	z-index: 100;
+	margin-left: -100px;
+}
+
+.who-am-i h2, .who-am-i h3, .who-am-i p {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.about-me {
+	color: #fff;
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: -900px;
+	background-color: #2c3e50;
+	z-index: 1000;
+}
+
+.about-me a {
+	color: #fff;
+}
+
+.about-me ul {
+	width: 350px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin-left: -400px;
+}
+
+.about-me .introduction {
+	width: 500px;
+	position: absolute;
+	top: 60%;
+	left: 55%;
+	/*margin-left: -400px;*/
+}
+
+.about-me ul li {
+	list-style: none;
+	line-height: 35px;
+}
+
+.about-me ul li span {
+	display: inline-block;
+	text-align: right;
+	width: 100px;
+}
+
+.star {
+	position: absolute;
+}
+
+.star-top-left {
+	top: 250px;
+	left: 350px;
+}
+
+.star-top-right {
+  	top: 300px;
+	right: 200px;
+}
+
+.star-bottom-left {
+	bottom: 100px;
+	left: 200px;
+}
+
+.star-bottom-right {
+	bottom: 10px;
+	right: 500px;
+}
+
+@-webkit-keyframes fadeScale {
+    from {
+        transform: scale(0.8);
+        opacity: 0.8
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+@-moz-keyframes fadeScale {
+    from {
+        transform: scale(0.8);
+        opacity: 0.8
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+@keyframes fadeScale {
+    from {
+        transform: scale(0.8);
+        opacity: 0.8
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.star img {
+	height: 40px;
+	width: auto;
+	-webkit-animation: fadeScale 1s infinite alternate ease-in;
+   	-moz-animation: fadeScale 1s infinite alternate ease-in;
+    	animation: fadeScale 1s infinite alternate ease-in
+}
+
+.star img {
+	height: 40px;
+	width: auto;
+	-webkit-animation: fadeScale 1s infinite alternate ease-in;
+   	-moz-animation: fadeScale 1s infinite alternate ease-in;
+    	animation: fadeScale 1s infinite alternate ease-in
+}
+
+.clouds-bar {
+	width: 100%;
+	position: absolute;
+	z-index: 1200;
+}
+
+@-webkit-keyframes fadeScale {
+    from {
+        transform: scale(0.98);
+        opacity: 0.9
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+@-moz-keyframes fadeScale {
+    from {
+        transform: scale(0.98);
+        opacity: 0.9
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+@keyframes fadeScale {
+    from {
+        transform: scale(0.98);
+        opacity: 0.9
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.cloud-1 {
+	position: absolute;
+	top: 500px;
+	left: 200px;
+}
+
+.cloud-1 img {
+	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
+   	-moz-animation: fadeScale 1s infinite alternate ease-in-out
+    	animation: fadeScale 1s infinite alternate ease-in-out
+}
+
+.cloud-2 {
+	position: absolute;
+	top: 500px;
+	right: 50px;
+}
+.cloud-2 img {
+	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
+   	-moz-animation: fadeScale 1s infinite alternate ease-in-out
+    	animation: fadeScale 1s infinite alternate ease-in-out
+}
+
+/*@Skills Page
+X roll
+----------------------------------------------------------------------------------------------------------------*/
+#skills-page {
+	width: 100%;
+	height: 100%;
+	background: #47C1F2 url(skills-bg.jpg) left bottom no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
