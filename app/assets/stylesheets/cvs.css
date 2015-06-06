@@ -70,26 +70,22 @@ Y roll
 
 @-webkit-keyframes vh {
 	0% {
-		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		        transform:rotate(0deg);
 	}
 	100% {
-		transform:rotate(360deg);
-	}
-}
-@-moz-keyframes vh {
-	0% {
-		transform:rotate(0deg);
-	}
-	100% {
-		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		        transform:rotate(360deg);
 	}
 }
 @keyframes vh {
 	0% {
-		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		        transform:rotate(0deg);
 	}
 	100% {
-		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		        transform:rotate(360deg);
 	}
 }
 
@@ -100,8 +96,7 @@ Y roll
 	left: 78px;
 	position: absolute;
 	-webkit-animation: vh 0.1s steps(6) infinite;
-	-moz-animation: vh 0.1s steps(6) infinite;
-	animation: vh 0.1s steps(6) infinite;
+			animation: vh 0.1s steps(6) infinite;
 }
 
 .tringle-bar {
@@ -160,14 +155,6 @@ Y roll
 		background-position:center -600px
 	}
 }
-@-moz-keyframes rot {
-	0% {
-		background-position:center 0
-	}
-	100% {
-		background-position:center -600px
-	}
-}
 @keyframes rot {
 	0% {
 		background-position:center 0
@@ -186,8 +173,7 @@ Y roll
     top: 125px;
 	background: url(vint-horisontal.png) center top no-repeat;
 	-webkit-animation: rot 0.1s steps(20) infinite;
-	-moz-animation: rot 0.1s steps(20) infinite;
-	animation: rot 0.1s steps(20) infinite;
+			animation: rot 0.1s steps(20) infinite;
 }
 
 .self-box {
@@ -334,31 +320,25 @@ div.photo-box{
 
 @-webkit-keyframes fadeScale {
     from {
-        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
         opacity: 0.8
     }
     to {
-        transform: scale(1);
-        opacity: 1
-    }
-}
-@-moz-keyframes fadeScale {
-    from {
-        transform: scale(0.8);
-        opacity: 0.8
-    }
-    to {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
         opacity: 1
     }
 }
 @keyframes fadeScale {
     from {
-        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8);
         opacity: 0.8
     }
     to {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
         opacity: 1
     }
 }
@@ -367,16 +347,14 @@ div.photo-box{
 	height: 40px;
 	width: auto;
 	-webkit-animation: fadeScale 1s infinite alternate ease-in;
-   	-moz-animation: fadeScale 1s infinite alternate ease-in;
-    	animation: fadeScale 1s infinite alternate ease-in
+    		animation: fadeScale 1s infinite alternate ease-in;
 }
 
 .star img {
 	height: 40px;
 	width: auto;
 	-webkit-animation: fadeScale 1s infinite alternate ease-in;
-   	-moz-animation: fadeScale 1s infinite alternate ease-in;
-    	animation: fadeScale 1s infinite alternate ease-in
+    		animation: fadeScale 1s infinite alternate ease-in;
 }
 
 .clouds-bar {
@@ -387,31 +365,25 @@ div.photo-box{
 
 @-webkit-keyframes fadeScale {
     from {
-        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
         opacity: 0.9
     }
     to {
-        transform: scale(1);
-        opacity: 1
-    }
-}
-@-moz-keyframes fadeScale {
-    from {
-        transform: scale(0.98);
-        opacity: 0.9
-    }
-    to {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
         opacity: 1
     }
 }
 @keyframes fadeScale {
     from {
-        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
         opacity: 0.9
     }
     to {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
         opacity: 1
     }
 }
@@ -424,8 +396,7 @@ div.photo-box{
 
 .cloud-1 img {
 	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
-   	-moz-animation: fadeScale 1s infinite alternate ease-in-out
-    	animation: fadeScale 1s infinite alternate ease-in-out
+    		animation: fadeScale 1s infinite alternate ease-in-out;
 }
 
 .cloud-2 {
@@ -435,8 +406,7 @@ div.photo-box{
 }
 .cloud-2 img {
 	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
-   	-moz-animation: fadeScale 1s infinite alternate ease-in-out
-    	animation: fadeScale 1s infinite alternate ease-in-out
+    		animation: fadeScale 1s infinite alternate ease-in-out;
 }
 
 /*@Skills Page
@@ -449,4 +419,94 @@ X roll
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+@-webkit-keyframes swing {
+	0 {
+		-webkit-transform: rotateZ(0deg);
+	}
+	25% {
+		-webkit-transform: rotateZ(5deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(0deg);
+	}
+	75% {
+		-webkit-transform: rotateZ(-5deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(0deg);
+	}
+}
+
+@keyframes swing {
+	0 {
+		transform: rotateZ(0deg);
+	}
+	25% {
+		transform: rotateZ(5deg);
+	}
+	50% {
+		transform: rotateZ(0deg);
+	}
+	75% {
+		transform: rotateZ(-5deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+.skill-cloud-bar {
+	position: absolute;
+	-webkit-transform-origin: 74px 5px;
+			transform-origin: 74px 5px;
+	-webkit-animation: swing 3s infinite linear;
+	        animation: swing 3s infinite linear;
+}
+
+.skill-cloud-1 {
+	width: 100%;
+	height: 100%;
+	background: url(hang-cloud.png) 0 -197px no-repeat;
+}
+
+.skill-cloud-bar strong{
+	width: 152px;
+	height: 90px;
+	text-align: center;
+	line-height: 90px;
+	position: absolute;
+	bottom: 0;
+	z-index: 110;
+}
+
+.cover-cloud {
+	background: url(cover-cloud.png) 0 0 no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 152px;
+	height: 97px;
+	z-index: -1;
+}
+
+.skill-1 {
+	width: 152px;
+	height: 300px;
+	top: 0;
+	left: 100px;
+}
+
+.skill-2 {
+	width: 152px;
+	height: 400px;
+	top: 0;
+	left: 250px;
+}
+
+
+.skill-cloud-2 {
+	width: 100%;
+	height: 100%;
+	background: url(hang-cloud.png) 0 -97px no-repeat;
 }

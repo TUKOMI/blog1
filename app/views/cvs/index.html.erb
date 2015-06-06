@@ -24,9 +24,9 @@
 			<%=image_tag("tringle-top.png") %>
 		</div>
 		<div class="plane"
-			data-300="top: -10px; transform[bounce]:scale(0.4); opacity: 1;"
-			data-1000="top:1000px;transform[bounce]:scale(1.5); opacity: 1;"
-			data-1300="top:1000px;transform[bounce]:scale(1.5); opacity: 0;">
+			data-300="top: -10px; transform[bounce]:scale(0.4); opacity: 1; display: block;"
+			data-1000="top:1000px;transform[bounce]:scale(1.5); opacity: 1; display: block;"
+			data-1300="top:1000px;transform[bounce]:scale(1.5); opacity: 0; display: none;">
 			<%=image_tag("air-top.svg") %>
 			<span class="airscrew"></span>
 		</div>
@@ -63,6 +63,7 @@
 		<div class="about-me"
 			data-300="top: -800px;"
 			data-1000="top: -50px;"
+			data-1200="top: -50px;"
 			data-1900="top: -300px;" >
 			<ul>
 				<li><span>姓名&nbsp;|&nbsp;</span><%= @admin.name %></li>
@@ -110,9 +111,18 @@
 			</div>
 		</div>
 	</div>
-	<idv id="skills-page" data-1300="top:200px" data-1700="top: 0px" >
-
-	</idv>
+	<div id="skills-page" data-1300="top:200px" data-2500="top: 0px" >
+		<div class="skill-cloud-bar skill-1">
+			<div class="skill-cloud-1"></div>
+			<strong>HTML</strong>
+			<div class="cover-cloud"></div>
+		</div>
+		<div class="skill-cloud-bar skill-2">
+			<div class="skill-cloud-2"></div>
+			<strong>CSS</strong>
+			<div class="cover-cloud"></div>
+		</div>
+	</div>
 </div>
 <script>
 
@@ -135,4 +145,20 @@
 			$email.fadeIn("slow","swing");
 		});
 	});
+
+	var skill_clouds = $(".skill-cloud-bar strong");
+	for( var i = 0; i < skill_clouds.length; i++){
+		(function(){
+			$(skill_clouds[i]).one('mouseenter', function(e){
+				var $this = $(this);
+				var $curr_cloud = $this.prev();
+				$curr_cloud.animate({
+					"height": "-=50px"
+				}, 2000);
+			});
+		});
+	})();
+	}
+
+
 </script>
