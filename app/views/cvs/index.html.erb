@@ -127,9 +127,8 @@
 <script>
 
 	var scrollObj = skrollr.init({
-		  //跟smoothScrolling的功能，主要都是讓scroll事件不要這麼敏感，動畫才不會看起來卡卡的。
-		  smoothScrolling : true,
-		  smoothScrollingDuration:200,
+		  smoothScrolling: true,
+		  smoothScrollingDuration: 1000,
 
 	});
 	var $email = $('.email');
@@ -156,8 +155,7 @@
 					"height": "-=50px"
 				}, 2000);
 			});
-		});
-	})();
+		})();
 	}
 
 
