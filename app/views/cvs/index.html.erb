@@ -2,13 +2,13 @@
 	<div id="intro-page"
 		data-0="top: 0;"
 		data-1000="top:0;"
-		data-1200="top: -50px;"
-		data-1400="top: -200px;"
-		data-1700="top: -300px;"
-		data-1900="top: -400px;"
-		data-2100="top: -500px;"
-		data-2300="top: -600px;"
-		data-2500="top: -750px;" >
+		data-1200="top: -20px;"
+		data-1300="top: -50px;"
+		data-1500="top: -200px;"
+		data-1700="top: -500px;"
+		data-1900="top: -900px;"
+		data-2100="top: -1400px;"
+		data-2300="top: -10000px;" >
 		<div class="logo-cell">
 			<span class="logo skrollable rendered"
 				data--10="top:10px;"
@@ -20,7 +20,7 @@
 			data--10="top:-190px;"
 			data-350="top:-150px;"
 			data-1000="top: -150px;"
-			data-1900="top: -160px;" >
+			data-1500="top: -200px;" >
 			<%=image_tag("tringle-top.png") %>
 		</div>
 		<div class="plane"
@@ -63,8 +63,12 @@
 		<div class="about-me"
 			data-300="top: -800px;"
 			data-1000="top: -50px;"
-			data-1200="top: -50px;"
-			data-1900="top: -300px;" >
+			data-1100="top: -50px;"
+			data-1200="top: -70px;"
+			data-1300="top: -100px;"
+			data-1500="top: -200px;"
+			data-1700="top: -300px;"
+			data-1800="top: -400px;">
 			<ul>
 				<li><span>姓名&nbsp;|&nbsp;</span><%= @admin.name %></li>
 				<li><span>手机&nbsp;|&nbsp;</span><%= @admin.phone %></li>
@@ -111,7 +115,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="skills-page" data-1300="top:200px" data-2500="top: 0px" >
+	<div id="skills-page" data-1300="top:200px" data-1700="top: 0px" >
 		<div class="skill-cloud-bar skill-1">
 			<div class="skill-cloud-1"></div>
 			<strong>HTML</strong>
@@ -145,18 +149,8 @@
 		});
 	});
 
-	var skill_clouds = $(".skill-cloud-bar strong");
-	for( var i = 0; i < skill_clouds.length; i++){
-		(function(){
-			$(skill_clouds[i]).one('mouseenter', function(e){
-				var $this = $(this);
-				var $curr_cloud = $this.prev();
-				$curr_cloud.animate({
-					"height": "-=50px"
-				}, 2000);
-			});
-		})();
-	}
+	var html = new skill(".skill-1 strong",  ".skill-cloud-1",  {height: "70px", time: 2000});
 
+	var css = new skill(".skill-2 strong", ".skill-cloud-2",  {height: "60px", time: 2000});
 
 </script>
