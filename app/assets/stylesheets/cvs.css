@@ -625,6 +625,7 @@ div.plane-2 > span.airscrew-2 {
 .skill-cloud-bar > strong{
 	width: 152px;
 	height: 90px;
+	cursor: pointer;
 	text-align: center;
 	line-height: 90px;
 	position: absolute;
@@ -679,7 +680,7 @@ ul.detail > li {
 	width: 152px;
 	height: 400px;
 	top: 0;
-	left: 600px;
+	left: 700px;
 	z-index: 80;
 }
 
@@ -693,7 +694,7 @@ ul.detail > li {
 	width: 152px;
 	height: 300px;
 	top: 0;
-	left: 900px;
+	left: 1100px;
 	z-index: 100;
 }
 
@@ -707,7 +708,7 @@ ul.detail > li {
 	width: 152px;
 	height: 250px;
 	top: 0;
-	left: 1200px;
+	left: 1500px;
 	z-index: 80;
 }
 
