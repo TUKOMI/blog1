@@ -131,48 +131,57 @@
 			data-3000="left: -1960px;" >
 			<div class="skill-cloud-bar skill-1" >
 				<div class="skill-cloud-1"></div>
-				<strong>HTML/CSS</strong>
+				<div class="skill-info">
+					<strong>HTML/CSS</strong>
+					<ul class="detail-list fade">
+						<li>能够编写结构合理的页面布局；</li>
+						<li>能使用CSS3达到更加的页面效果；</li>
+						<li>了解HTML5新语义化标签和新特性；</li>
+						<li>能够使用Bootstrap、jQueryUI等前端开发框架；</li>
+						<li>熟悉Chrome开发工具辅助开发。</li>
+					</ul>
+				</div>
 				<div class="cover-cloud"></div>
-				<ul class="detail">
-					<li>能够编写结构合理的页面布局；</li>
-					<li>能使用CSS3达到更加的页面效果；</li>
-					<li>了解HTML5新语义化标签和新特性；</li>
-					<li>能够使用Bootstrap、jQueryUI等前端开发框架；</li>
-					<li>熟悉Chrome开发工具辅助开发。</li>
-				</ul>
+
 			</div>
 			<div class="skill-cloud-bar skill-2">
 				<div class="skill-cloud-2"></div>
-				<strong>JavaScript</strong>
+				<div class="skill-info">
+					<strong>JavaScript</strong>
+					<ul class="detail-list fade">
+						<li>掌握原生JavaScript,能使用其编写一般项目；</li>
+						<li>了解面对对象的程序设计；</li>
+						<li>能运用Ajax开发；</li>
+						<li>能运用jQurey框架辅助开发。</li>
+					</ul>
+				</div>
 				<div class="cover-cloud"></div>
-				<ul class="detail">
-					<li>掌握原生JavaScript,能使用其编写一般项目；</li>
-					<li>了解面对对象的程序设计；</li>
-					<li>能运用Ajax开发；</li>
-					<li>能运用jQurey框架辅助开发。</li>
-				</ul>
 			</div>
 			<div class="skill-cloud-bar skill-3">
 				<div class="skill-cloud-3"></div>
-				<strong>ROR框架</strong>
+				<div class="skill-info">
+					<strong>ROR框架</strong>
+					<ul class="detail-list">
+						<li>了解Ruby on Rails框架，能编写简单需求；</li>
+						<li>理解MVC架构；</li>
+						<li>能配合后端进行数据交换。</li>
+					</ul>
+				</div>
 				<div class="cover-cloud"></div>
 				<div class="detail"></div>
-				<ul class="detail">
-					<li>了解Ruby on Rails框架，能编写简单需求；</li>
-					<li>理解MVC架构；</li>
-					<li>能配合后端进行数据交换。</li>
-				</ul>
 			</div>
 			<div class="skill-cloud-bar skill-4">
 				<div class="skill-cloud-4"></div>
-				<strong>开发工具</strong>
+				<div class="skill-info">
+					<strong>开发工具</strong>
+					<ul class="detail-list">
+						<li>能使用Git等版本控制工具；</li>
+						<li>能在Linux环境下进行开发；</li>
+						<li>能使用Photoshop进行简单的图片处理，根据页面结构进行合理的图片分割；</li>
+					</ul>
+				</div>
 				<div class="cover-cloud"></div>
 				<div class="detail"></div>
-				<ul class="detail">
-					<li>能使用Git等版本控制工具；</li>
-					<li>能在Linux环境下进行开发；</li>
-					<li>能使用Photoshop进行简单的图片处理，根据页面结构进行合理的图片分割；</li>
-				</ul>
 			</div>
 		</div>
 		<div id="projects"
@@ -203,12 +212,12 @@
 		});
 	});
 
-	var html = new skill(".skill-1 strong",  ".skill-cloud-1",  {height: "70px", time: 1000});
+	var html = new skill(".skill-1 .skill-info",  ".skill-cloud-1",  {height: "70px", time: 1500});
 
-	var js = new skill(".skill-2 strong", ".skill-cloud-2",  {height: "60px", time: 1000});
+	var js = new skill(".skill-2 .skill-info", ".skill-cloud-2",  {height: "60px", time: 1500});
 
-	var ror = new skill(".skill-3 strong",  ".skill-cloud-3",  {height: "40px", time: 1000});
+	var ror = new skill(".skill-3 .skill-info",  ".skill-cloud-3",  {height: "40px", time: 1500});
 
-	var tools = new skill(".skill-4 strong", ".skill-cloud-4",  {height: "60px", time: 1000});
+	var tools = new skill(".skill-4 .skill-info", ".skill-cloud-4",  {height: "60px", time: 1500});
 
 </script>

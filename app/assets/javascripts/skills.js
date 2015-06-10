@@ -2,13 +2,11 @@ function skill(container, sibling, config){
 
 	var defaultConfig = {
 		height :  "50px",
-		time :  2000,
-		text: "Empty!"
+		time :  2000
 	}
 
 	this.eventElement = $(container);
 	this.fillElement = this.eventElement.siblings().filter(sibling);
-	this.detail = this.eventElement.siblings().filter(".detail");
 	this.config = config || {};
 	this.config = $.extend(defaultConfig, this.config);
 
@@ -19,9 +17,6 @@ skill.prototype.init = function(){
 	var ref = this;
 	$(ref.eventElement).one('mouseenter', function(e){
 		ref.fill();
-	});
-	$(ref.eventElement).on("click", function(){
-		ref.detail.toggle();
 	});
 }
 
