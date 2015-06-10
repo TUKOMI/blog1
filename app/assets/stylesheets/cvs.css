@@ -205,7 +205,7 @@ div.plane > span.airscrew {
 	z-index: 800;
 }
 
-.self-box > .road-box{
+.road-box{
 	width: 266px;
 	height: 678px;
 	overflow: hidden;
@@ -215,11 +215,11 @@ div.plane > span.airscrew {
 	margin-left: -133px;
 }
 
-.self-box > .road-line{
+.road-box > .road-line{
 	background: url(road-line.png) left top repeat-y;
 	width: 266px;
-    height: 8000px;
-    overflow: hidden;
+    	height: 8000px;
+    	overflow: hidden;
 	position: absolute;
 	top: 0;
 }
