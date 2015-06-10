@@ -100,7 +100,7 @@ Y roll
 		                transform:rotate(360deg);
 	}
 }
-.logo img {
+.logo > img {
 	width: 80px;
 	height: 80px;
 	top: -12px;
@@ -120,7 +120,7 @@ Y roll
 	z-index: 1100;
 }
 
-.tringle-bar img {
+.tringle-bar > img {
 	width: 100%;
 	height: auto;
 	position: absolute;
@@ -138,7 +138,7 @@ Y roll
 	z-index: 900;
 }
 
-.tringle-back img {
+.tringle-back > img {
 	width: 100%;
 	position: absolute;
 	top: 60px;
@@ -153,7 +153,7 @@ Y roll
 	z-index: 950;
 }
 
-.plane img {
+.plane > img {
 	display: block;
 	width: 100%;
 	height: auto!important;
@@ -183,7 +183,7 @@ Y roll
 		background-position:center -600px
 	}
 }
-div.plane span.airscrew {
+div.plane > span.airscrew {
 	display: block;
 	width: 230px;
 	height: 30px;
@@ -205,7 +205,7 @@ div.plane span.airscrew {
 	z-index: 800;
 }
 
-.self-box .road-box{
+.self-box > .road-box{
 	width: 266px;
 	height: 678px;
 	overflow: hidden;
@@ -215,7 +215,7 @@ div.plane span.airscrew {
 	margin-left: -133px;
 }
 
-.self-box .road-line{
+.self-box > .road-line{
 	background: url(road-line.png) left top repeat-y;
 	width: 266px;
     height: 8000px;
@@ -234,7 +234,7 @@ div.plane span.airscrew {
 	z-index: 100;
 }
 
-.self-box .cnt-bg {
+.self-box > .cnt-bg {
 	width: 600px;
 	height: 600px;
 	background: url(home-blur.png) 0 0 no-repeat;
@@ -266,7 +266,7 @@ div.photo-box{
 	margin-left: -100px;
 }
 
-.who-am-i h2, .who-am-i h3, .who-am-i p {
+.who-am-i > h2, .who-am-i > h3, .who-am-i p {
 	text-align: center;
 	margin-top: 30px;
 	font-size: 20px;
@@ -274,7 +274,6 @@ div.photo-box{
 }
 
 .about-me {
-	color: #fff;
 	width: 100%;
 	height: 600px;
 	position: absolute;
@@ -287,7 +286,7 @@ div.photo-box{
 	color: #fff;
 }
 
-.about-me ul {
+.about-me > ul {
 	width: 350px;
 	position: absolute;
 	top: 60%;
@@ -295,20 +294,28 @@ div.photo-box{
 	margin-left: -400px;
 }
 
-.about-me .introduction {
+.about-me > .introduction {
 	width: 500px;
+	padding: 10px;
 	position: absolute;
 	top: 60%;
 	left: 55%;
 	/*margin-left: -400px;*/
 }
 
-.about-me ul li {
+ .introduction > p{
+	color: #fff;
+	text-indent: 2em;
+}
+
+.about-me > ul  > li {
+	color: #fff;
 	list-style: none;
 	line-height: 35px;
 }
 
-.about-me ul li span {
+.about-me > ul  > li > span {
+	color: #fff;
 	display: inline-block;
 	text-align: right;
 	width: 100px;
@@ -377,7 +384,7 @@ div.photo-box{
 	}
 }
 
-.star img {
+.star > img {
 	height: 40px;
 	width: auto;
 	-webkit-animation: fadeScale 1s infinite alternate ease-in;
@@ -435,7 +442,7 @@ div.photo-box{
 	left: 200px;
 }
 
-.cloud-1 img {
+.cloud-1 > img {
 	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
 	     -moz-animation: fadeScale 1s infinite alternate ease-in-out;
     		animation: fadeScale 1s infinite alternate ease-in-out;
@@ -446,7 +453,7 @@ div.photo-box{
 	top: 500px;
 	right: 50px;
 }
-.cloud-2 img {
+.cloud-2 > img {
 	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
 	     -moz-animation: fadeScale 1s infinite alternate ease-in-out;
     		animation: fadeScale 1s infinite alternate ease-in-out;
@@ -491,7 +498,7 @@ div.plane-2 {
 	z-index: 99;
 }
 
-div.plane-2 img {
+div.plane-2 > img {
 	width: 100%;
 	display: block;
 	height: auto!important;
@@ -521,7 +528,7 @@ div.plane-2 img {
         		background-position: -600px center;
 	}
 }
-div.plane-2 span.airscrew-2 {
+div.plane-2 > span.airscrew-2 {
 	display: block;
 	width: 30px;
 	height: 100px;
@@ -615,13 +622,7 @@ div.plane-2 span.airscrew-2 {
 		animation: swing 3s infinite linear;
 }
 
-.skill-cloud-1 {
-	width: 100%;
-	height: 100%;
-	background: url(hang-cloud.png) 0 -197px no-repeat;
-}
-
-.skill-cloud-bar strong{
+.skill-cloud-bar > strong{
 	width: 152px;
 	height: 90px;
 	text-align: center;
@@ -641,11 +642,37 @@ div.plane-2 span.airscrew-2 {
 	z-index: -1;
 }
 
+ul.detail {
+	list-style-type: none;
+	width: 300px;
+	height: auto;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	display: none;
+}
+
+ul.detail > li {
+	list-style: disc;
+	margin-left: 1.3em;
+}
+
 .skill-1 {
 	width: 152px;
 	height: 300px;
 	top: 0;
-	left: 250px;
+	left: 300px;
+	z-index: 100;
+}
+
+.skill-cloud-1 {
+	width: 100%;
+	height: 100%;
+	background: url(hang-cloud.png) 0 -197px no-repeat;
 }
 
 .skill-2 {
@@ -653,10 +680,39 @@ div.plane-2 span.airscrew-2 {
 	height: 400px;
 	top: 0;
 	left: 600px;
+	z-index: 80;
 }
 
 .skill-cloud-2 {
 	width: 100%;
 	height: 100%;
 	background: url(hang-cloud.png) 0 -97px no-repeat;
+}
+
+.skill-3 {
+	width: 152px;
+	height: 300px;
+	top: 0;
+	left: 900px;
+	z-index: 100;
+}
+
+.skill-cloud-3 {
+	width: 100%;
+	height: 100%;
+	background: url(hang-cloud.png) 0 -197px no-repeat;
+}
+
+.skill-4 {
+	width: 152px;
+	height: 250px;
+	top: 0;
+	left: 1200px;
+	z-index: 80;
+}
+
+.skill-cloud-4 {
+	width: 100%;
+	height: 100%;
+	background: url(hang-cloud.png) 0 -247px no-repeat;
 }
