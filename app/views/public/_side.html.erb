@@ -1,0 +1,22 @@
+<style type="text/css">
+
+      #left-side {
+    width: 200px;
+    margin-left: -100%;
+    margin-top: 30px;
+    background: #ccc;
+    float: left;
+  }
+  ul#nav {
+    list-style-type: none;
+  }
+  ul#nav li {
+    height: 30px;
+  }
+</style>
+<div id="left-side">
+	<ul id="nav">
+		<li><%= link_to "Admin", users_path %></li>
+		<li><%= link_to "Project", projects_path %></li>
+	</ul>
+</div>

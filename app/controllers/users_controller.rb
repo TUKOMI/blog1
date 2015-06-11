@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @user = User.find_by_category("admin")
   end
 
   # GET /users/1
@@ -69,6 +69,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:type, :name, :phone, :email, :blog_url, :github_url, :edu_info, :introduction, :skills)
+      params.require(:user).permit(:category, :name, :phone, :email, :blog_url, :github_url, :edu_info, :introduction, :skills)
     end
 end
