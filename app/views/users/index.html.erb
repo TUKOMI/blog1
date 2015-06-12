@@ -1,45 +1,19 @@
-<style type="text/css">
-    #container {
-        width: 100%;
-        margin-top: 30px;
-        float: left;
-    }
-    .content {
-        margin-left: 200px;
-        padding: 30px;
-        background-color: #1cc;
-    }
-      #left-side {
-    width: 200px;
-    margin-left: -100%;
-    margin-top: 30px;
-    background: #ccc;
-    float: left;
-  }
-  ul#nav {
-    list-style-type: none;
-  }
-  ul#nav li {
-    height: 30px;
-  }
-</style>
+<%= render "public/header" %>
 <div id="container">
-<div class="content">
-<h1>Listing Users</h1>
-<ul>
-        <li> Type<%= @user.category %></li>
-        <li>Name<%= @user.name %></li>
-        <li>Phone<%= @user.phone %></li>
-        <li>Email<%= @user.email %></li>
-        <li>Blog<%= @user.blog_url %></li>
-        <li>Github<%= @user.github_url %></li>
-        <li>Edu<%= @user.edu_info %></li>
-        <li>Intro<%= @user.introduction %></li>
-        <li>Skills<%= @user.skills %></li>
-        <li><%= link_to 'Edit', edit_user_path(@user) %></li>
-</ul>
-
-<%= link_to 'New User', new_user_path %>
-</div>
+        <div class="content">
+                <h1>Listing Users</h1>
+                <ul>
+                        <li> Type<%= @user.category %></li>
+                        <li>Name<%= @user.name %></li>
+                        <li>Phone<%= @user.phone %></li>
+                        <li>Email<%= @user.email %></li>
+                        <li>Blog<%= @user.blog_url %></li>
+                        <li>Github<%= @user.github_url %></li>
+                        <li>Edu<%= @user.edu_info %></li>
+                        <li>Intro<%= @user.introduction %></li>
+                        <li>Skills<%= @user.skills %></li>
+                        <li><%= link_to 'Edit', edit_user_path(@user) %></li>
+                </ul>
+        </div>
 </div>
 <%= render "public/side" %>

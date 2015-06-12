@@ -1,22 +1,41 @@
-<style type="text/css">
-
-      #left-side {
-    width: 200px;
-    margin-left: -100%;
-    margin-top: 30px;
-    background: #ccc;
-    float: left;
-  }
-  ul#nav {
-    list-style-type: none;
-  }
-  ul#nav li {
-    height: 30px;
-  }
-</style>
-<div id="left-side">
-	<ul id="nav">
-		<li><%= link_to "Admin", users_path %></li>
+<div id="settings-side">
+	<header>
+		<h1>YunDong</h1>
+		<div class="settings-icon">
+			<a href="javascript:void(0);">
+				<i class="linecons-cog"></i>
+			</a>
+		</div>
+	</header>
+	<ul id="sidebar-menu">
+		<li>
+			<a href="<%= users_path %>">
+				<i class="linecons-params"></i>
+				Admin
+			</a>
+			<ul>
+				<li></li>
+				<li></li>
+			</ul>
+		</li>
 		<li><%= link_to "Project", projects_path %></li>
 	</ul>
 </div>
+<script type="text/javascript">
+	var link_arr = $("#sidebar-menu li ");
+	for(var i = 0; i < link_arr.length; i++){
+		(function(i){
+			$(link_arr[i]).on("click", function(){
+				if ($(this).hasClass("expanded")) {
+					$(this).removeClass("expanded");
+
+				} else{
+					$(this).addClass("expanded");
+					console.log($(this));
+				}
+				return false;
+			});
+		})(i);
+	}
+
+</script>

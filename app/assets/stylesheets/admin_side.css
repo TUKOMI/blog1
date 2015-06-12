@@ -1,0 +1,141 @@
+/*@settings header
+*display none;
+----------------------------------------------------------------------------------------------------------------*/
+div#settings-header {
+	display: none;
+	height: 200px;
+	width: 100%;
+	background: #27292a;
+}
+
+div#settings-header > a {
+	text-decoration: none;
+	color: #aaa;
+	padding: 10px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 99;
+}
+
+div#settings-header > a:hover {
+	color: #fff;
+}
+
+div.user-info {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	height: 200px;
+	padding: 30px 100px;
+}
+
+div.curr-info {
+	display: table;
+}
+
+img.user-foto {
+	width: 140px;
+	height: 140px;
+	-webkit-border-radius: 70px;
+	        border-radius: 70px;
+}
+div.user-details {
+	color: #fff;
+	padding-left: 20px;
+	display: table-cell;
+ 	 vertical-align: middle;
+}
+
+div.user-details > h3 {
+	  font-size: 23px;
+}
+
+div.user-details > p {
+	  color: #ccc;
+}
+
+.digest p {
+	color: #ccc;
+	margin: 0;
+	text-indent: 2em;
+}
+
+/*@settings side
+*
+----------------------------------------------------------------------------------------------------------------*/
+#settings-side {
+	width: 200px;
+	height: 100%;
+    	background: #2c2e2f;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+}
+
+#settings-side h1, h2, h3, p, span {
+	color: #fff;
+	display: inline;
+}
+
+#settings-side header a {
+	color: #ccc;
+	font-size: 18px;
+}
+
+#settings-side a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#settings-side header {
+	padding: 10px;
+	border-bottom: 1px solid #888;
+}
+
+.settings-icon {
+	float: right;
+	margin-top: 10px;
+}
+ul#sidebar-menu {
+	 margin-top: 20px;
+	 padding: 0 30px;
+    	list-style-type: none;
+}
+
+ul#sidebar-menu li > a{
+    	height: 45px;
+    	line-height: 45px;
+	color: #ccc;
+}
+
+ul#sidebar-menu li > a:before {
+	font-size: 12px;
+	position: relative;
+	display: inline-block;
+	content: '>';
+	float: right;
+	color: #6d747a;
+	margin-left: 10px;
+ 	-webkit-transform: rotate(-0deg);
+    	-moz-transform: rotate(-0deg);
+    	transform: rotate(-0deg);
+    	transition: all 200ms ease-in-out;
+}
+
+ul#sidebar-menu li > i {
+	display: inline-block;
+  	margin-right: 10px;
+}
+
+ul#sidebar-menu li > ul {
+	display: none;
+}
+
+ul#sidebar-menu li.expanded > a:before{
+ 	-webkit-transform: rotate(90deg);
+    	-moz-transform: rotate(90deg);
+    	transform: rotate(90deg);
+    	transition:  all 200ms ease-in-out;
+}
